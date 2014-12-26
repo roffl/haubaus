@@ -1,0 +1,25 @@
+@media (min-width: 770px) and (max-width: 1599px) {
+  .contacts .address,
+  .contacts .phone,
+  .contacts .email {
+    width: 100%;
+    text-align: left;
+    padding-left: 33px;
+  }
+  .contacts .address p,
+  .contacts .phone p,
+  .contacts .email p {
+    font-size: 16px;
+  }
+  .contacts .phone:before,
+  .contacts .address:before,
+  .contacts .email:before {
+    left: 2px;
+  }
+  .contacts .email {
+    margin-bottom: 25px;
+  }
+  .copy {
+    padding-left: 30px;
+  }
+}

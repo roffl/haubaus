@@ -1,0 +1,29 @@
+nav.nav-portfolio li{
+    &:nth-child(4){
+        padding-right: 12px;
+    }
+
+    &:last-child{
+        padding-right: 0;
+
+        a{
+            padding-left: 21px;
+            position: relative;
+
+            &:before{
+                content: " ";
+                display: inline-block;
+                background-image: url(../../img/icon_line_vertical.png);
+                width: 1px;
+                height: 26px;
+                position: absolute;
+                left: 0;
+                top: -5px; 
+            }
+        }
+    }
+
+    a{
+        text-transform: uppercase;
+    }
+}

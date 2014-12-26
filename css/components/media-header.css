@@ -1,0 +1,8 @@
+@media (min-width: 1200px) and (max-width: 1599px) {
+  header .col-md-3 {
+    padding-right: 0;
+  }
+  header .col-md-9 {
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,251 @@
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .row > div:first-child {
+    padding-left: 28px;
+  }
+  .row > div:last-child {
+    padding-right: 28px;
+  }
+  .row > div {
+    display: inline-block;
+    padding: 0 14px;
+    vertical-align: top;
+  }
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .col-sm-1 {
+    width: 12.5%;
+  }
+  .col-sm-2 {
+    width: 25%;
+  }
+  .col-sm-3 {
+    width: 37.5%;
+  }
+  .col-sm-4 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 62.5%;
+  }
+  .col-sm-6 {
+    width: 75%;
+  }
+  .col-sm-7 {
+    width: 87.5%;
+  }
+  .col-sm-8 {
+    width: 100%;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 360px) and (max-width: 769px) {
+  .col-xs-1 {
+    width: 16.66666667%;
+  }
+  .col-xs-2 {
+    width: 33.33333333%;
+  }
+  .col-xs-3 {
+    width: 50%;
+  }
+  .col-xs-4 {
+    width: 66.66666667%;
+  }
+  .col-xs-5 {
+    width: 83.33333333%;
+  }
+  .col-xs-6 {
+    width: 100%;
+  }
+  .row > div:first-child {
+    padding-left: 24px;
+  }
+  .row > div:last-child {
+    padding-right: 24px;
+  }
+  .row > div {
+    padding: 0 12px;
+  }
+  .hidden-sm {
+    display: none !important;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+  .hidden-lg {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  header .col-md-3 {
+    padding-right: 0;
+    width: 27%;
+  }
+  header .col-md-3 .logo img {
+    width: 102px;
+  }
+  header .col-md-3 .logo p {
+    font-size: 15px;
+  }
+  header .col-md-9 {
+    padding-left: 0;
+    width: 73%;
+  }
+  nav ul a {
+    font-size: 15px;
+  }
+  .nav-porfolio li:last-child a {
+    padding-left: 25px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .publication .image-wrapper {
+    height: 500px;
+  }
+  .title-publication {
+    left: 30px;
+    top: 350px;
+  }
+  .button {
+    left: 30px;
+    top: 425px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .upper-footer p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .upper-footer .block-about {
+    width: 100%;
+    padding: 0;
+  }
+  .block-about:first-child {
+    margin-bottom: 22px;
+  }
+}
+@media (min-width: 360px) and (max-width: 769px) {
+  .block-about:first-child {
+    display: none;
+  }
+  .upper-footer {
+    padding: 19px 0;
+  }
+  .upper-footer .block-about {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (min-width: 770px) and (max-width: 1599px) {
+  .contacts .address,
+  .contacts .phone,
+  .contacts .email {
+    width: 100%;
+    text-align: left;
+    padding-left: 33px;
+  }
+  .contacts .address p,
+  .contacts .phone p,
+  .contacts .email p {
+    font-size: 16px;
+  }
+  .contacts .phone:before,
+  .contacts .address:before,
+  .contacts .email:before {
+    left: 2px;
+  }
+  .contacts .email {
+    margin-bottom: 25px;
+  }
+  .copy {
+    padding-left: 33px;
+    margin-bottom: 15px;
+  }
+  .copy p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .upper-footer .social {
+    display: inline-block;
+    padding-left: 33px;
+  }
+  .upper-footer .social li {
+    display: inline-block;
+    padding-left: 0;
+  }
+  .upper-footer .social li a:after {
+    color: #f2f2f2;
+  }
+  .upper-footer .social li:before {
+    display: none;
+  }
+  .copy {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .social {
+    display: none;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .container {
+    width: 1200px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .container {
+    width: 770px;
+  }
+}
+@media (min-width: 360px) and (max-width: 769px) {
+  .container {
+    width: 360px;
+  }
+}

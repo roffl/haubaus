@@ -1,0 +1,23 @@
+@import "variables.less";
+@import "components/media-grid.less";
+@import "components/media-header.less";
+@import "components/media-publications.less";
+@import "components/media-footer.less";
+@import "components/media-footer-contacts.less";
+@import "components/media-nav-site.less";
+
+.container{
+    @media (min-width: 1200px) and (max-width: 1599px){
+        width: @pc;
+    }
+    @media (min-width: 770px) and (max-width: 1199px){
+        width: @tablet;
+    }
+    @media (min-width: 360px) and (max-width: 769px){
+        width: @phone;
+    }
+}
+
+
+
+

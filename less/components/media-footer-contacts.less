@@ -1,0 +1,48 @@
+@media (min-width: 770px) and (max-width: 1599px){
+    .contacts{
+
+        .address, .phone, .email{
+            width: 100%;
+            text-align: left;
+            padding-left: 33px;
+            p{
+                font-size: 16px;
+            }
+        }
+        .phone:before, .address:before, .email:before{
+            left: 2px;
+        }
+        .email{
+            margin-bottom: 25px;
+        }
+    }
+
+    .copy{
+        padding-left: 33px;
+        margin-bottom: 15px;
+
+        p{
+            font-size: 16px;
+        }
+    }
+}
+@media (min-width: 770px) and (max-width: 1199px){
+    .upper-footer .social{
+        display: inline-block;
+        padding-left: 33px;
+
+        li{
+            display: inline-block;
+            padding-left: 0;
+
+            a:after{color: #f2f2f2;}
+
+            &:before{
+                display: none;
+            }
+        }
+    }
+    .copy{
+        margin-bottom: 25px;
+    }
+}

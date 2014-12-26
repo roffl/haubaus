@@ -1,0 +1,80 @@
+@media (min-width: 1200px) and (max-width: 1599px){
+
+
+    .generate-md-columns(@n, @i: 1) when (@i =< @n) { // Условие выполнения!
+    // @n — количество колонок
+    // @i — внутренний счетчик от 1 до @n
+    // Собственно, генерация
+    .col-md-@{i} {
+    width: (@i * 100% / @n);
+    }
+    // Рекурсовный самовызов с цвеличенным на 1 счетчиком
+    .generate-md-columns(@n, (@i + 1));
+    }
+
+    .generate-md-columns(12);
+
+    .row > div:first-child{
+        padding-left: 28px;
+    }
+    .row > div:last-child{
+        padding-right: 28px;
+    }
+    .row > div {
+        display: inline-block;
+        padding: 0 14px;
+        vertical-align: top;
+    }
+    .hidden-lg{ display: none !important; }
+
+}
+
+@media (min-width: 770px) and (max-width: 1199px){
+
+    .generate-sm-columns(@n, @i: 1) when (@i =< @n) { // Условие выполнения!
+    // @n — количество колонок
+    // @i — внутренний счетчик от 1 до @n
+    // Собственно, генерация
+    .col-sm-@{i} {
+    width: (@i * 100% / @n);
+    }
+    // Рекурсовный самовызов с цвеличенным на 1 счетчиком
+    .generate-sm-columns(@n, (@i + 1));
+    }
+
+    .generate-sm-columns(8);
+
+    .hidden-md{ display: none !important; }
+    .hidden-lg{ display: none !important; }
+
+}
+
+@media (min-width: 360px) and (max-width: 769px){    
+
+    .generate-xs-columns(@n, @i: 1) when (@i =< @n) { // Условие выполнения!
+    // @n — количество колонок
+    // @i — внутренний счетчик от 1 до @n
+    // Собственно, генерация
+    .col-xs-@{i} {
+    width: (@i * 100% / @n);
+    }
+    // Рекурсовный самовызов с цвеличенным на 1 счетчиком
+    .generate-xs-columns(@n, (@i + 1));
+    }
+
+    .generate-xs-columns(6);
+
+    .row > div:first-child{
+        padding-left: 24px;
+    }
+    .row > div:last-child{
+        padding-right: 24px;
+    }
+    .row > div {
+        padding: 0 12px;
+    }
+    
+    .hidden-sm{ display: none !important; }
+    .hidden-md{ display: none !important; }
+    .hidden-lg{ display: none !important; }
+}

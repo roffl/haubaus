@@ -1,0 +1,6 @@
+nav.nav-site li:first-child {
+  padding-left: 20px;
+}
+nav.nav-site li:last-child {
+  padding-right: 0;
+}

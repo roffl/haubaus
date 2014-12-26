@@ -1,0 +1,36 @@
+header{
+    padding: 20px 0 15px;
+}
+
+a.logo{
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+
+    img{
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 21px;
+    }
+
+    p{
+        display: inline-block;
+        font-size: @header-font;
+        font-family: @fira-sans;
+        color: @logo-text-color;
+        vertical-align: middle;
+        position: relative;
+        padding-left: 21px;
+
+        &:before{
+            content: " ";
+            display: inline-block;
+            background-image: url(../../img/icon_line_vertical.png);
+            width: 1px;
+            height: 26px;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+    }
+}

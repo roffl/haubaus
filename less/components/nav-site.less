@@ -1,0 +1,71 @@
+.lower-footer{
+    padding: 23px 0;
+}
+
+.nav-site {
+    text-align: right;
+    
+
+    .site li{
+        &:last-child{
+            padding-right: 20px;
+        }
+
+        a{
+            font-size: @lower-footer-font;
+        }
+    }
+    
+
+}
+
+.social li{
+
+    padding: 0 5px;
+
+    &:first-child{
+        padding-left: 20px;
+        position: relative;
+
+        &:before{
+            content: " ";
+            display: inline-block;
+            background-image: url(../../img/icon_line_vertical.png);
+            width: 1px;
+            height: 26px;
+            position: absolute;
+            left: 0;
+            top: -5px; 
+        }
+    }
+
+    &:last-child{ padding-right: 0;}
+    
+    a{
+        
+        &:after{
+            content: " ";
+            font-family: @fontello;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            font-size: 18px;
+            color: @social-button;
+            position: relative;
+            
+        }
+
+        span{display: none;}
+    }
+
+    .icon-vk:after{
+        content: "\e800";
+    }
+    .icon-fb:after{
+        content: "\e801";
+    }
+    .icon-in:after{
+        content: "\e802";
+    }
+
+}
