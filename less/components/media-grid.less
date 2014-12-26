@@ -44,8 +44,19 @@
 
     .generate-sm-columns(8);
 
+    .row > div:first-child{
+        padding-left: 24px;
+    }
+    .row > div:last-child{
+        padding-right: 24px;
+    }
+    .row > div {
+        padding: 0 12px;
+    }
+    
     .hidden-md{ display: none !important; }
     .hidden-lg{ display: none !important; }
+
 
 }
 
@@ -64,15 +75,7 @@
 
     .generate-xs-columns(6);
 
-    .row > div:first-child{
-        padding-left: 24px;
-    }
-    .row > div:last-child{
-        padding-right: 24px;
-    }
-    .row > div {
-        padding: 0 12px;
-    }
+
     
     .hidden-sm{ display: none !important; }
     .hidden-md{ display: none !important; }

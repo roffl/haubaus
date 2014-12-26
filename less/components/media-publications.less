@@ -1,4 +1,9 @@
 @media (min-width: 1200px) and (max-width: 1599px){
+
+    .main .publications{
+        padding-left: 26px;
+    }
+
     .publication{
         .image-wrapper{
             height: 500px;
@@ -11,5 +16,46 @@
     .button{
         left: 30px;
         top: 425px;
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 1199px){
+    .main .publications{
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 769px){  
+
+    a.logo p{display: none;}
+
+    .main .publications{
+        padding: 0 24px;
+    }
+
+    .publication .image-wrapper{
+        height: 260px;
+    }
+
+    .publication .title-publication{
+        position: static;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0;
+        margin-bottom: 22px;
+    }
+    .logo-wrapper{
+        height: 60px;
+        top: 259px;
+        left: 23px;
+        right: auto;
+    }
+
+    .button{
+        left: auto;
+        right: 25px;
+        top: 263px;
     }
 }
