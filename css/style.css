@@ -205,6 +205,12 @@ footer .column-11 {
 .social li .icon-in:after {
   content: "\e802";
 }
+.move-up {
+  display: none;
+  background-image: url(../../img/icon_footer_button_to_up.png);
+  width: 25px;
+  height: 15px;
+}
 .upper-footer-logo + p {
   padding-bottom: 20px;
   position: relative;
