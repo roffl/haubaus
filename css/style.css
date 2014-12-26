@@ -114,6 +114,7 @@ nav li a {
   text-decoration: none;
   color: #cbcbcb;
   font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
 }
 .outer-list > li:last-child {
   padding-right: 0;
@@ -140,7 +141,7 @@ nav li a {
 .nav-holder {
   padding-right: 0;
 }
-.nav-holder > a {
+.dropdown-toggle {
   display: none;
 }
 footer ul {

@@ -142,6 +142,52 @@
     padding-left: 25px;
   }
 }
+@media (min-width: 770px) and (max-width: 1599px) {
+  a.logo img {
+    width: 102px;
+  }
+  a.logo p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .dropdown-toggle {
+    display: inline-block;
+    padding-right: 15px;
+    position: relative;
+  }
+  .dropdown-toggle:before {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    background-image: url(../../img/icon_nav_portfolio_triangle.png);
+    width: 9px;
+    height: 8px;
+    left: -20px;
+    transform: rotate(180deg);
+    top: 2px;
+  }
+  .open:before {
+    transform: rotate(0deg);
+  }
+  .inner-list {
+    display: none;
+  }
+  nav li a {
+    font-size: 15px;
+  }
+  .active {
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #121212;
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+    padding: 15px 0;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1599px) {
   .publication .image-wrapper {
     height: 500px;
