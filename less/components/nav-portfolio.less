@@ -1,14 +1,12 @@
-nav.nav-portfolio li{
-    &:nth-child(4){
-        padding-right: 12px;
-    }
-
+.outer-list>li{
     &:last-child{
         padding-right: 0;
+        padding-left: 6px;
 
         a{
             padding-left: 21px;
             position: relative;
+            font-weight: 500;
 
             &:before{
                 content: " ";
@@ -21,9 +19,10 @@ nav.nav-portfolio li{
                 top: -5px; 
             }
         }
-    }
-
-    a{
-        text-transform: uppercase;
-    }
+    } 
 }
+
+.nav-portfolio a{ text-transform: uppercase; }
+.nav-holder{ padding-right: 0; }
+.nav-holder > a{ display: none; }
+
