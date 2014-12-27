@@ -116,6 +116,12 @@ nav li a {
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
 }
+.outer-dropdown-toggle {
+  display: none;
+}
+.outer-dropdown-toggle span {
+  display: none;
+}
 .outer-list > li:last-child {
   padding-right: 0;
   padding-left: 6px;

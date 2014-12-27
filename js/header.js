@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   // var displayWidth = $(window).width();
 
-  $(".dropdown-toggle").click(function(event) {
+  $(".inner-dropdown-toggle").click(function(event) {
 
     event.preventDefault;
 
@@ -18,7 +18,7 @@ $(document).ready(function() {
         .removeClass('active')
         .appendTo('.nav-holder');
 
-      $(".dropdown-toggle").removeClass("open");
+      $(".inner-dropdown-toggle").removeClass("open");
 
       $('.inner-nav').remove();
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
         .addClass('active')
         .appendTo('.inner-nav');
 
-        $(".dropdown-toggle").addClass("open");
+        $(".inner-dropdown-toggle").addClass("open");
     }
   });
 });
