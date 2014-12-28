@@ -217,6 +217,37 @@
     display: none;
   }
 }
+@media (min-width: 360px) and (max-width: 769px) {
+  .outer-list {
+    display: none;
+  }
+  .outer-dropdown-toggle {
+    display: inline-block;
+    position: relative;
+  }
+  .outer-dropdown-toggle:after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    background-image: url(../../img/icon_header_phone_nav.png);
+    width: 22px;
+    height: 21px;
+    left: -24px;
+    top: 0;
+  }
+  .outer-active {
+    display: block;
+    list-style-type: none;
+    background-color: #121212;
+  }
+  .outer-active .inner-list {
+    list-style-type: none;
+    display: block;
+  }
+  .inner-dropdown-toggle {
+    display: none;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1599px) {
   .main .publications {
     padding-left: 26px;
@@ -243,6 +274,10 @@
     display: none;
   }
   .main .publications {
+    padding: 0;
+  }
+  .main .publications h1,
+  .main .publications p {
     padding: 0 24px;
   }
   .publication .image-wrapper {
@@ -253,19 +288,21 @@
     background-color: transparent;
     font-size: 24px;
     font-weight: 400;
-    padding: 0;
+    padding: 0 24px;
     margin-bottom: 22px;
   }
   .logo-wrapper {
     height: 60px;
-    top: 259px;
+    top: auto;
+    bottom: 19px;
     left: 23px;
     right: auto;
   }
   .button {
     left: auto;
     right: 25px;
-    top: 263px;
+    top: auto;
+    bottom: 24px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {

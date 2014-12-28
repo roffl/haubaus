@@ -3,6 +3,7 @@
     .inner-list{display: none;}
 }
 
+
 @media (min-width: 770px) and (max-width: 1199px){
 
 
@@ -36,6 +37,7 @@
     nav li a{font-size: 15px;}
 
     .active{
+        // можно засунуть в миксин и вставить еще в .outer-active
         text-align: center;
         display: block;
         top: 0;   
@@ -79,3 +81,38 @@
     }
 }
 
+@media (min-width: 360px) and (max-width: 769px){
+    .outer-list{
+        display: none;
+    }
+    .outer-dropdown-toggle{
+        display: inline-block;
+        position: relative;
+        
+
+        &:after{
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            background-image: url(../../img/icon_header_phone_nav.png);
+            width: 22px;
+            height: 21px;
+            left: -24px;
+            top: 0;
+        }
+    }
+
+    .outer-active{
+        display: block;
+        list-style-type: none;
+        background-color: #121212;
+
+
+
+        .inner-list{
+            list-style-type: none;
+            display: block;
+        }
+    }
+    .inner-dropdown-toggle{display: none;}
+}
