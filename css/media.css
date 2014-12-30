@@ -220,6 +220,30 @@
 @media (min-width: 360px) and (max-width: 769px) {
   .outer-list {
     display: none;
+    text-align: center;
+    padding: 14px 0 0;
+    border-top: 1px solid #323232;
+    border-bottom: 1px solid #323232;
+  }
+  .outer-list a {
+    display: inline-block;
+    color: #cbcbcb;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 17px 0;
+  }
+  .outer-list > li:first-child > a {
+    display: none;
+  }
+  .outer-list > li:last-child {
+    padding-left: 0;
+  }
+  .outer-list > li:last-child a {
+    padding: 22px 0 25px;
+  }
+  .outer-list > li:last-child a:before {
+    display: none;
   }
   .outer-dropdown-toggle {
     display: inline-block;
@@ -243,6 +267,7 @@
   .outer-active .inner-list {
     list-style-type: none;
     display: block;
+    border-bottom: 1px solid #323232;
   }
   .inner-dropdown-toggle {
     display: none;
