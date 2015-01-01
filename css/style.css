@@ -163,6 +163,9 @@ footer .column-11 {
   font-size: 14px;
   display: none;
 }
+iframe {
+  display: none;
+}
 .lower-footer {
   padding: 23px 0;
 }
@@ -234,18 +237,6 @@ footer .column-11 {
   font-family: 'PT Sans', sans-serif;
   line-height: 20px;
   color: #a8a8a8;
-}
-.block-about {
-  display: inline-block;
-  vertical-align: top;
-}
-.block-about:first-child {
-  width: 42.682%;
-  padding-right: 14px;
-}
-.block-about:last-child {
-  width: 57.318%;
-  padding-left: 14px;
 }
 .upper-footer-logo {
   font-size: 15px;

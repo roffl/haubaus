@@ -91,7 +91,7 @@
     display: none !important;
   }
 }
-@media (min-width: 360px) and (max-width: 769px) {
+@media (min-width: 0) and (max-width: 769px) {
   .col-xs-1 {
     width: 16.66666667%;
   }
@@ -347,24 +347,25 @@
   }
 }
 @media (min-width: 770px) and (max-width: 1199px) {
-  .upper-footer .block-about {
-    width: 100%;
-    padding: 0;
+  .upper-footer .row {
+    overflow: hidden;
   }
-  .block-about:first-child {
+  .upper-footer .row > div:nth-child(2) {
     margin-bottom: 22px;
   }
+  .block-contacts {
+    float: right;
+  }
 }
-@media (min-width: 360px) and (max-width: 769px) {
+@media (min-width: 0) and (max-width: 769px) {
   .upper-footer {
     padding: 19px 0;
   }
-  .upper-footer .block-about {
-    width: 100%;
-    padding: 0;
-  }
   .upper-footer .row > div {
     padding: 0 24px;
+  }
+  .upper-footer .block-about:first-child {
+    margin-bottom: 22px;
   }
   .site,
   .social {
@@ -374,7 +375,72 @@
     display: inline-block;
   }
   .middle-footer {
+    display: block;
+    background-color: #222;
+    padding: 20px 24px;
+  }
+  .middle-footer .social {
     display: inline-block;
+    width: 50%;
+  }
+  .middle-footer .social li {
+    display: inline-block;
+  }
+  .middle-footer .social li:first-child {
+    padding-left: 0;
+  }
+  .middle-footer .social li:first-child:before {
+    display: none;
+  }
+  .middle-footer .copy {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    text-align: right;
+  }
+  .middle-footer .copy p {
+    color: #a8a8a8;
+  }
+  iframe {
+    display: block;
+    width: 100%;
+    margin-bottom: 23px;
+  }
+  .contacts .address {
+    width: 100%;
+  }
+  .contacts .address p {
+    font-size: 18px;
+  }
+  .contacts .address:before {
+    font-size: 30px;
+  }
+  .contacts .phone {
+    width: 100%;
+    font-size: 0;
+  }
+  .contacts .phone:before {
+    display: none;
+  }
+  .contacts .phone > p {
+    display: inline-block;
+    width: 50%;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .contacts .phone > p:first-child {
+    text-align: left;
+  }
+  .contacts .email {
+    font-size: 18px;
+    text-decoration: underline;
+  }
+  .contacts .email:before {
+    font-size: 18px;
+  }
+  .copy {
+    display: none;
   }
 }
 @media (min-width: 770px) and (max-width: 1599px) {
@@ -440,7 +506,7 @@
     width: 770px;
   }
 }
-@media (min-width: 360px) and (max-width: 769px) {
+@media (min-width: 0) and (max-width: 769px) {
   .container {
     width: auto;
   }

@@ -6,32 +6,98 @@
 
 
 @media (min-width: 770px) and (max-width: 1199px){
-    .upper-footer{
-        .block-about{
-            width: 100%;
-            padding: 0;
-        }        
+    .upper-footer .row{
+        overflow: hidden;
+        &>div:nth-child(2){
+            margin-bottom: 22px;
+        }
     }
-    .block-about:first-child{margin-bottom: 22px;}
+    .block-contacts{float: right;}
+    // .block-about:first-child{margin-bottom: 22px;}
 
 }
 
 
-@media (min-width: 360px) and (max-width: 769px){
+@media (min-width: 0) and (max-width: 769px){
     
     // .block-about:first-child{display: none;}
     .upper-footer{
         padding: 19px 0;
-        .block-about{
-            width: 100%;
-            padding: 0;
-        }        
-        .row>div{
+        // .block-about{
+        //     width: 100%;
+        //     padding: 0;
+        // }        
+        .row > div{
             padding: 0 24px;
         }
+        .block-about:first-child{
+            margin-bottom: 22px;    
+        }
     }
+
     .site, .social{display: none;}
+
     .move-up{display: inline-block;}
-    .middle-footer{display: inline-block;}
+
+    .middle-footer{
+        display: block;
+        background-color: #222; 
+        padding: 20px 24px;    
+
+        .social{
+            display: inline-block;
+            width: 50%; 
+            li{display: inline-block; }
+            li:first-child{padding-left: 0;}
+            li:first-child:before{display: none; }
+        }
+        .copy{
+            display: inline-block;
+            width: 50%; 
+            font-size: 16px;
+            font-family: @pt-sans;
+            text-align: right;
     
+            p{
+                color: #a8a8a8; 
+            }
+        }
+    }
+
+    iframe{
+        display: block; 
+        width: 100%; 
+        margin-bottom: 23px;
+    }
+
+    .contacts {
+        .address{
+            width: 100%;
+            p{font-size: 18px;}
+            &:before{font-size: 30px;}
+        }
+
+        .phone{
+            width: 100%; 
+            font-size: 0;   
+            &:before{   
+                display: none;
+            }
+            &>p{
+                display: inline-block;
+                width: 50%;
+                // text-align: center;
+                font-weight: 700;  
+                font-size: 20px;    
+
+                &:first-child{text-align: left;}  
+            }
+        }
+        .email{
+            font-size: 18px;
+            text-decoration: underline;
+            &:before{font-size: 18px;   }
+        }
+    }
+    .copy{display: none;}
 }
