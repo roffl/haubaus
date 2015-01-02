@@ -150,6 +150,14 @@
     font-size: 15px;
   }
 }
+@media (min-width: 0) and (max-width: 769px) {
+  header {
+    border-bottom: 1px solid #282828;
+  }
+  a.logo p {
+    display: none;
+  }
+}
 @media (min-width: 360px) and (max-width: 1199px) {
   .inner-list {
     display: none;
@@ -225,7 +233,7 @@
     display: none;
   }
 }
-@media (min-width: 360px) and (max-width: 769px) {
+@media (min-width: 0) and (max-width: 769px) {
   .inner-nav-tablet {
     display: none;
   }
@@ -305,9 +313,9 @@
     padding: 0 24px;
   }
 }
-@media (min-width: 360px) and (max-width: 769px) {
-  a.logo p {
-    display: none;
+@media (min-width: 0) and (max-width: 769px) {
+  .magazines {
+    padding: 35px 0 0;
   }
   .main .publications {
     padding: 0;
@@ -334,11 +342,58 @@
     left: 23px;
     right: auto;
   }
-  .button {
+  .publication .button {
     left: auto;
     right: 25px;
     top: auto;
     bottom: 24px;
+  }
+}
+@media (min-width: 770px) and (max-width: 1199px) {
+  .blog-post-short {
+    padding: 26px;
+    margin-bottom: 28px;
+  }
+  .post-title {
+    font-size: 28px;
+  }
+  .post-short {
+    margin-bottom: 23px;
+  }
+  .post-short-img {
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 360px) and (max-width: 769px) {
+  .blog {
+    padding: 25px 0;
+  }
+  .blog .blog-list {
+    padding: 0;
+  }
+  .breadcrumbs {
+    padding: 0 24px;
+    margin-bottom: 22px;
+  }
+  .blog-post-short {
+    padding: 25px 24px;
+  }
+  .post-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .post-short {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .post-short-img {
+    margin-bottom: 24px;
+  }
+  .post-short-img .image-wrapper {
+    width: 100%;
+  }
+  .post-short-img .image-wrapper:last-child {
+    display: none;
   }
 }
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -381,7 +436,8 @@
   }
   .middle-footer .social {
     display: inline-block;
-    width: 50%;
+    width: 35%;
+    vertical-align: top;
   }
   .middle-footer .social li {
     display: inline-block;
@@ -394,7 +450,7 @@
   }
   .middle-footer .copy {
     display: inline-block;
-    width: 50%;
+    width: 65%;
     font-size: 16px;
     font-family: 'PT Sans', sans-serif;
     text-align: right;

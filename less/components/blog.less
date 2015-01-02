@@ -1,0 +1,105 @@
+.blog{
+
+    background-color: #fff;
+
+    .aside-nav{ 
+        p{
+            color: #525252;
+        }
+        a{
+            display: inline-block;
+            color: #6c6c6c;
+        }
+        .all-links{
+            color: #bebebe;
+        }
+        .all-posts{
+            width: 100%;
+            text-align: center;
+            color: #d55;
+        }
+    }
+        
+    .posts {
+    
+        p{
+            margin-bottom: 28px;
+            padding-bottom: 27px;
+            border-bottom: 1px solid #d7d7d7;
+            padding-top: 0;
+        }
+        li{ 
+            margin-bottom: 28px;
+
+            a:last-child:not(.all-posts){
+                width: 75%;
+                vertical-align: top;
+                padding-left: 20px;
+                font-weight: 500;
+                font-family: @fira-sans;
+                color: #464646;
+            }
+        }
+    }
+
+
+}
+// хлебные крошки
+.breadcrumbs{
+    font-size: 18px;
+    font-family: @pt-sans;
+    margin-bottom: 35px;
+
+    a{ font-weight: normal; }
+}
+// короткая запись в блоге
+.blog-post-short{ 
+    font-size: 15px; 
+    padding: 30px 33px;
+    background-color: #f7f7f7;
+    margin-bottom: 40px; 
+    &:last-child{margin-bottom: 0;}   
+
+    .button{
+        display: inline-block;
+        font-size: 16px;
+        font-family: @pt-sans;
+        text-decoration: none;
+        color: #fff;
+        background-color: #787878;
+        padding: 10px 17px;
+        border-radius: 8px;
+        box-shadow: 0 3px 0 0 #555;
+    }
+}
+// название записи в блоге
+.post-title{
+    font-family: @fira-sans;
+    font-weight: 500;
+    color: #464646; 
+    font-size: 30px;
+    line-height: 36px;  
+    margin-bottom: 15px;    
+}
+// короткое описание
+.post-short{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: @pt-serif;
+    margin-bottom: 20px; 
+    color: #464646;   
+}
+.post-short-img{
+    overflow: hidden;
+    margin-bottom: 28px;
+
+    .image-wrapper{
+        width: 47.5%;
+
+        img{width: 100%;}
+    }
+    
+    a:first-child{float: left;}
+    a:last-child{float: right;}
+}
+
