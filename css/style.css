@@ -9,7 +9,7 @@
   text-decoration: none;
   color: #cbcbcb;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 .container {
   width: 1600px;
@@ -126,7 +126,7 @@ nav li a {
   text-decoration: none;
   color: #cbcbcb;
   font-family: 'Fira Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 .outer-dropdown-toggle {
   display: none;
@@ -469,13 +469,19 @@ iframe {
   font-weight: normal;
 }
 .blog-post-short {
-  font-size: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'PT Serif', serif;
+  color: #464646;
   padding: 30px 33px;
   background-color: #f7f7f7;
   margin-bottom: 40px;
 }
 .blog-post-short:last-child {
   margin-bottom: 0;
+}
+.blog-post-short p {
+  margin-bottom: 20px;
 }
 .blog-post-short .button {
   display: inline-block;
@@ -496,13 +502,6 @@ iframe {
   line-height: 36px;
   margin-bottom: 15px;
 }
-.post-short {
-  font-size: 18px;
-  line-height: 24px;
-  font-family: 'PT Serif', serif;
-  margin-bottom: 20px;
-  color: #464646;
-}
 .post-short-img {
   overflow: hidden;
   margin-bottom: 28px;
@@ -519,8 +518,59 @@ iframe {
 .post-short-img a:last-child {
   float: right;
 }
-.post article {
-  font-size: 15px;
+.blog-post article {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'PT Serif', serif;
+  color: #464646;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 40px;
+}
+.blog-post article .post-title {
+  margin-bottom: 20px;
+}
+.blog-post article .image-wrapper {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.blog-post article .image-wrapper:last-child {
+  margin-bottom: 0;
+}
+.blog-post article .image-wrapper img {
+  width: 100%;
+}
+.blog-post article p {
+  margin-bottom: 35px;
+}
+.blog-post .better-posts {
+  font-size: 0;
+  margin-bottom: 30px;
+}
+.blog-post .better-posts li {
+  display: inline-block;
+  width: 42%;
+  margin-bottom: 40px;
+}
+.blog-post .better-posts li:nth-child(2n+1) {
+  margin-right: 3.2%;
+}
+.blog-post .better-posts li:last-child,
+.blog-post .better-posts li:nth-last-of-type(2) {
+  margin-bottom: 0;
+}
+.blog-post .better-posts li .link {
+  width: 79%;
+  vertical-align: top;
+  padding-left: 20px;
+  color: #464646;
+}
+.post-subtitle {
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  color: #464646;
+  font-size: 18px;
+  margin-bottom: 25px;
 }
 .aside-nav {
   font-family: 'PT Sans', sans-serif;
