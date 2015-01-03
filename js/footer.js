@@ -12,11 +12,11 @@ $(document).ready(function() {
     }
 
     function contactsStructure(){
-        var address = $('.address');
-        var phone = $('.phone');
-        var email = $('.email');
+        var address = $('footer .address');
+        var phone = $('footer .phone');
+        var email = $('footer .email');
         var social = $('.middle-footer .social')
-        var copy = $('.copy');
+        var copy = $('footer .copy');
         if( $(window).width() < 770 ){
             $(address).before(phone);
             $(phone).after(email);
