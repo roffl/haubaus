@@ -572,6 +572,9 @@ iframe {
   font-size: 18px;
   margin-bottom: 25px;
 }
+.block-form {
+  font-size: 15px;
+}
 .aside-nav {
   font-family: 'PT Sans', sans-serif;
 }
