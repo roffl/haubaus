@@ -23,6 +23,7 @@ $(document).ready(function() {
             $(social).after(copy);
         } else{
             $(phone).before(address);
+            $('footer .contacts').after(copy);
         }
     }
 

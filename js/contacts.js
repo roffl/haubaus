@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     function pageContactsStructure(){
         var blockContactsMap = $('.block-contacts-map');
         if( $(window).width() < 1600 ){

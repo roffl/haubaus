@@ -66,6 +66,9 @@
 .col-lg-16 {
   width: 100%;
 }
+.col-lg-offset-2 {
+  margin-left: 12.5%;
+}
 .row {
   font-size: 0;
 }
@@ -163,6 +166,9 @@ nav li a {
   position: relative;
   font-weight: 500;
 }
+.outer-list > li:last-child a:hover {
+  color: #fbfbfb;
+}
 .outer-list > li:last-child a:before {
   content: " ";
   display: inline-block;
@@ -175,6 +181,9 @@ nav li a {
 }
 .nav-portfolio a {
   text-transform: uppercase;
+}
+.nav-portfolio a:hover {
+  color: #fbfbfb;
 }
 .nav-holder {
   padding-right: 0;
@@ -210,6 +219,9 @@ iframe {
 .nav-site .site li a {
   font-size: 15px;
 }
+.nav-site .site li a:hover {
+  color: #fbfbfb;
+}
 .social li {
   padding: 0 5px;
 }
@@ -239,6 +251,9 @@ iframe {
   font-size: 18px;
   color: #cacaca;
   position: relative;
+}
+.social li a:hover:after {
+  color: #fbfbfb;
 }
 .social li a span {
   display: none;
@@ -298,15 +313,18 @@ iframe {
   left: -1px;
   top: -5px;
 }
-.underline {
-  text-decoration: underline;
-}
 .upper-footer .title {
   font-size: 17px;
   color: #eee;
   font-family: 'PT Sans', sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
+}
+.block-about a {
+  color: #a8a8a8;
+}
+.block-about a:hover {
+  text-decoration: none;
 }
 .contacts {
   overflow: hidden;
@@ -355,7 +373,7 @@ iframe {
   font-size: 24px;
   left: 30px;
 }
-.contacts .icon-email a {
+.contacts .email a {
   color: #a8a8a8;
   font-family: 'PT Sans', sans-serif;
   text-decoration: none;
@@ -372,8 +390,14 @@ iframe {
 .copy a {
   color: #ebebeb;
 }
+.copy a:hover {
+  text-decoration: none;
+}
 .upper-footer .social {
   display: none;
+}
+.interior .row > div {
+  font-size: 15px;
 }
 .magazines {
   background-color: #121212;
@@ -418,6 +442,7 @@ iframe {
   position: static;
   height: 560px;
   pointer-events: none;
+  width: 100%;
 }
 .publication .image-wrapper img {
   width: 100%;
@@ -427,16 +452,16 @@ iframe {
   font-family: 'Fira Sans', sans-serif;
   font-size: 32px;
   padding: 15px 20px;
-  left: 48px;
-  top: 410px;
+  left: 30px;
+  bottom: 94px;
   pointer-events: none;
 }
 .publication .button {
   font-size: 16px;
   font-family: 'PT Sans', sans-serif;
   padding: 15px 30px;
-  left: 48px;
-  top: 485px;
+  left: 30px;
+  bottom: 30px;
 }
 .logo-wrapper {
   height: 65px;
@@ -732,6 +757,9 @@ iframe {
 }
 .aside-nav ul li a {
   font-size: 16px;
+}
+.aside-nav ul li a:hover {
+  text-decoration: none;
 }
 * {
   -webkit-box-sizing: border-box;

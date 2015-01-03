@@ -92,8 +92,10 @@
         }
 
         .phone{
+
             width: 100%; 
-            font-size: 0;   
+            font-size: 0;
+
             &:before{   
                 display: none;
             }
@@ -107,9 +109,15 @@
                 &:first-child{text-align: left;}  
             }
         }
+
         .email{
-            font-size: 18px;
-            text-decoration: underline;
+
+            a{
+                font-size: 18px;
+                text-decoration: underline;
+
+                &:hover{text-decoration: none;}
+            }
             &:before{font-size: 18px;   }
         }
     }

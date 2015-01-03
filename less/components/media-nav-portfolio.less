@@ -36,7 +36,10 @@
     }
 
 
-    nav li a{font-size: 15px;}
+    nav li a{
+        font-size: 15px;
+
+    }
 
     .active{
         // можно засунуть в миксин и вставить еще в .outer-active
@@ -71,7 +74,9 @@
             font-weight: 700;
             padding: 0 15px;
             text-transform: uppercase;
-            
+            &:hover{
+                color: #fbfbfb;
+            }
         }
     }
 }
@@ -110,6 +115,10 @@
             text-transform: uppercase;
             text-decoration: none;
             padding: 17px 0;
+
+            &:hover{
+                color: #fbfbfb;
+            }
         }
 
         &>li:first-child>a{display: none;}
