@@ -447,6 +447,7 @@ iframe {
   height: 100%;
 }
 .blog {
+  padding: 40px 0;
   background-color: #fff;
 }
 .blog .aside-nav p {
@@ -566,7 +567,6 @@ iframe {
 }
 .blog-post .better-posts {
   font-size: 0;
-  margin-bottom: 30px;
 }
 .blog-post .better-posts li {
   display: inline-block;
@@ -698,12 +698,16 @@ iframe {
 .block-contacts-map iframe {
   display: inline;
   width: 100%;
+  height: 434px;
+}
+.block-contacts-map .phone {
+  text-align: right;
 }
 .block-contacts-map .phone p {
-  text-align: right;
+  display: inline-block;
   font-size: 18px;
 }
-.block-contacts-map .phone p span {
+.block-contacts-map .phone span {
   margin: 0 10px;
 }
 .block-contacts-map .email a {

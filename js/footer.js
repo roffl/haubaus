@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
     }
 
-    function contactsStructure(){
+    function footerContactsStructure(){
         var address = $('footer .address');
         var phone = $('footer .phone');
         var email = $('footer .email');
@@ -27,9 +27,10 @@ $(document).ready(function() {
     }
 
     footerStructure();
-    contactsStructure();
+    footerContactsStructure();
+    
     $(window).resize(function() {
         footerStructure();
-        contactsStructure();
+        footerContactsStructure();
     });
 });
