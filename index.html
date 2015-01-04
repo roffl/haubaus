@@ -68,6 +68,7 @@
                         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-xs-6 description-project">
                             <p>Архитектурное проектирование общественных зданий, дизайн интерьера, проекты коттеджей и домов, общественные интерьеры: ресторанов, гостиниц, магазинов и бутиков. С 1996 мы сформировали свой авторский стиль для дизайна интерьеров, в которых есть все нужное и нет ничего лишнего. С 1996 мы сформировали свой авторский стиль для дизайна интерьеров, в которых есть все нужное и нет ничего лишнего.</p>
                         </div>
+                        <!-- слайдер галереии - появляется только на телефоне -->
                         <div class="hidden-lg hidden-md hidden-sm col-xs-6 hidden-slider">
                             <div class="galery-slider">
                                 <div class="item"><img src="img/img_project_1.jpg" alt=""></div>
@@ -75,7 +76,7 @@
                                 <div class="item"><img src="img/img_project_3.jpg" alt=""></div>
                                 <div class="item"><img src="img/img_project_4.jpg" alt=""></div>
                             </div>
-                        </div>
+                        </div> <!-- div class="hidden-slider" -->
                         <div class="col-lg-4 col-md-4 col-sm-8 col-xs-6 features-project">
                             <div class="features size">
                                 <p class="icon-size">116 м<span>3</span></p>
@@ -88,20 +89,36 @@
                             </div>
                         </div>
                     </div> <!-- div class="row" -->
+                    <!-- Просто галерея -->
                     <div class="row galery-project">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-2">
-                            <a href="#" class="image-wrapper"><img src="img/img_project_1.jpg" alt=""></a>
+                            <a href="#" class="image-wrapper">
+                                <img src="img/img_project_1.jpg" alt="">
+                                <div class="hover-overlay">
+                                    <div class="loupe"></div>
+                                </div>
+                            </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <a href="#" class="image-wrapper"><img src="img/img_project_2.jpg" alt=""></a>
+                            <a href="#" class="image-wrapper"><img src="img/img_project_2.jpg" alt="">
+                                <div class="hover-overlay">
+                                    <div class="loupe"></div>
+                                </div>
+                                </a>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-4">
-                            <a href="#" class="image-wrapper"><img src="img/img_project_3.jpg" alt=""></a>
+                            <a href="#" class="image-wrapper"><img src="img/img_project_3.jpg" alt="">
+                                <div class="hover-overlay">
+                                    <div class="loupe"></div>
+                                </div></a>
                         </div>
                         <div class="hidden-lg hidden-md col-sm-4">
-                            <a href="#" class="image-wrapper"><img src="img/img_project_4.jpg" alt=""></a>
+                            <a href="#" class="image-wrapper"><img src="img/img_project_4.jpg" alt="">
+                                <div class="hover-overlay">
+                                    <div class="loupe"></div>
+                                </div></a>
                         </div>
-                    </div> <!-- div class="row" -->
+                    </div> <!-- div class="row galery-project" -->
                 </div> <!-- div class="container" -->
             </div> <!-- div class="wrapper" -->
             <div class="wrapper bg-dark next-prev-project">
