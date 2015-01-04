@@ -1,8 +1,8 @@
 @media (min-width: 1200px) and (max-width: 1599px){
-    .interior{
+    .slider{
 
-        .owl-carousel .item{
-            height: 540px;
+         .owl-stage-outer,.owl-carousel .item{
+            height: 540px !important;
         }
         .owl-prev{left: 26px;}
         .owl-next{right: 26px;}
@@ -26,9 +26,13 @@
         padding: 25px 0 40px;
     }
     // задаем высоту слайдеру
-    .interior{
-        .owl-stage-outer{
+    .slider{
+        .owl-stage-outer, .owl-carousel .item{
             height: 480px !important;
+        }
+        .owl-carousel .item img{
+            width: auto;
+            height: 100%;
         }
     }
     // дивам, находящимся в блоке "о проекте", даем одинаковые внутренние отступы
@@ -103,5 +107,98 @@
         }
 }
 @media (min-width: 0) and (max-width: 769px){
+    .upper-breadcrumbs .breadcrumbs{
+        padding: 13px 0 10px;
+        margin-bottom: 0;
+        a{
+            font-size: 15px;
+            color: #efefef;
+        }
+    }
+    .slider{
 
+        .owl-stage-outer, .owl-carousel .item{
+            height: 480px !important;
+        }
+        .owl-carousel .item img{
+            width: auto;
+            height: 100%;
+        }
+        .owl-prev{left: 0;}
+        .owl-next{right: 0;}
+    }
+
+    .project{
+        padding-bottom: 0;
+        
+        .breadcrumbs{display: none;}
+        h1{display: none;}
+        .description-project{
+            line-height: 22px;
+            margin: 0;
+            padding: 0 24px;
+            margin-bottom: 26px;
+        }
+        .features-project{
+            padding: 0 24px;
+            border-left: none;
+
+            .size{
+                padding-top: 25px;
+                border-top: 1px solid #4a4a4a; 
+            } 
+        }
+    }
+    .about-project{margin-bottom: 0;}
+
+    .slider{position: relative;}
+
+    .abs-left-align{
+        font-size: 26px;
+        font-family: @fira-sans;
+        color: #fff;
+        position: absolute;
+        bottom: 12px;
+        z-index: 10;
+        padding: 10px;
+        background-color: rgba(0,0,0,0.8);
+        line-height: 30px;
+        width: 280px;
+    }
+
+
+    .galery-project{display: none;}
+
+    .next-prev-project{
+        padding: 0;
+        .row>div{
+            padding: 35px 24px 28px;
+
+            &:first-child{
+                border-bottom: 1px solid #272727;
+            }
+            &:before{
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+        }
+        span, a{
+            display: block;
+            text-align: center;
+        }
+        p{
+            line-height: 22px;
+        }
+    }
+    .galery-slider .owl-stage-outer, .galery-slider .item{
+        height: 240px !important;
+    }
+
+    .row .hidden-slider{
+        padding: 0;
+        margin-bottom: 24px;
+        .owl-prev{left: 0;}
+        .owl-next{right: 0;}
+    }
 }
