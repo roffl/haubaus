@@ -56,7 +56,7 @@
             <div class="wrapper bg-dark-gray project">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 col-lg-offset-2">
+                        <div class="col-lg-12 col-lg-offset-2 col-md-12 col-sm-8">
                             <ul class="breadcrumbs">
                                 <li><a href=""><span>Портфолио /</span></a></li>
                                 <li><a href=""><span>Общественные интерьеры</span></a></li>
@@ -65,10 +65,10 @@
                         </div>
                     </div>
                     <div class="row about-project">
-                        <div class="col-lg-8 col-lg-offset-2 description-project">
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 description-project">
                             <p>Архитектурное проектирование общественных зданий, дизайн интерьера, проекты коттеджей и домов, общественные интерьеры: ресторанов, гостиниц, магазинов и бутиков. С 1996 мы сформировали свой авторский стиль для дизайна интерьеров, в которых есть все нужное и нет ничего лишнего. С 1996 мы сформировали свой авторский стиль для дизайна интерьеров, в которых есть все нужное и нет ничего лишнего.</p>
                         </div>
-                        <div class="col-lg-4 features-project">
+                        <div class="col-lg-4 col-md-4 col-sm-8 features-project">
                             <div class="features size">
                                 <p class="icon-size">116 м<span>3</span></p>
                             </div>
@@ -91,7 +91,7 @@
                             <a href="#" class="image-wrapper"><img src="img/img_project_3.jpg" alt=""></a>
                         </div>
                         <div class="hidden-lg hidden-md col-sm-4">
-                            <a href="#" class="image-wrapper"><img src="http://placehold.it/364x240" alt=""></a>
+                            <a href="#" class="image-wrapper"><img src="img/img_project_4.jpg" alt=""></a>
                         </div>
                     </div> <!-- div class="row" -->
                 </div> <!-- div class="container" -->
@@ -99,11 +99,11 @@
             <div class="wrapper bg-dark next-prev-project">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-lg-offset-2">
-                            <p>Предыдущий проект:<a href="#">Квартира на Крестовском острове</a></p>
+                        <div class="col-lg-6 col-lg-offset-2 col-md-6 col-sm-4">
+                            <p><span>Предыдущий проект:</span><a href="#">Квартира на Крестовском острове</a></p>
                         </div>
-                        <div class="col-lg-5 col-lg-offset-1 text-right">
-                            <p>Следующий проект:<a href="#">Квартира на Миллионной</a></p>
+                        <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-4 text-right">
+                            <p><span>Следующий проект:</span><a href="#">Квартира на Миллионной</a></p>
                         </div>
                     </div>
                 </div>
@@ -195,10 +195,15 @@
         <script src="js/contacts.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script>
+
             $('.owl-carousel').owlCarousel({
+                items:1,
                 loop:true,
                 margin:10,
                 nav:true,
+                dots:false,
+                autoHeight:true,
+                autoWidth: true,
                 responsive:{
                     0:{
                         items:1

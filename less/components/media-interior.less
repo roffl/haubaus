@@ -1,0 +1,107 @@
+@media (min-width: 1200px) and (max-width: 1599px){
+    .interior{
+
+        .owl-carousel .item{
+            height: 540px;
+        }
+        .owl-prev{left: 26px;}
+        .owl-next{right: 26px;}
+    }
+    .project{
+        h1{font-size: 32px;}
+
+        .description-project{
+            margin-right: 0;
+            width: 67.9%;
+        }
+        .features-project{
+            width: 32.1%;
+            p{font-size: 16px;}
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1199px){
+    .project{
+        padding: 25px 0 40px;
+    }
+    // задаем высоту слайдеру
+    .interior{
+        .owl-stage-outer{
+            height: 480px !important;
+        }
+    }
+    // дивам, находящимся в блоке "о проекте", даем одинаковые внутренние отступы
+    .about-project{
+        margin-bottom: 35px;
+
+        &>div{padding: 0 26px;}
+
+        }
+    // убираем отступ, который ввели ранее
+    .description-project{
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    // убираем левую границу у блока со свойствами
+    .features-project{
+        border: none;
+
+        // блоки со свойствами делаем инлайн-блочными и даем внешний отступ справа
+        .features{
+            display: inline-block;
+            margin-right: 45px;
+            margin-bottom: 0;
+        }
+    }
+    // даем новые паддинги для элементов галереи
+    .galery-project{
+        &>div{
+            margin-bottom: 26px;
+
+            &:nth-child(2n){padding: 0 26px 0 13px;}
+            &:nth-child(2n+1){padding: 0 13px 0 26px;}
+
+            &:last-child, &:nth-last-of-type(2){
+                margin-bottom: 0;
+            }
+        }
+        .image-wrapper{
+            position: relative;
+            
+            &:after{
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                background-color: rgba(0,0,0,0.5);
+                right: 10px;
+                bottom: 10px;
+                background-image: url(../../img/icon_project_gallery_loupe.png);
+                background-size: 22px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+    }
+    .next-prev-project{
+        padding: 27px 0 25px;
+    }
+    .next-prev-project p{
+        span{
+            display: block;
+            margin-bottom: 10px;
+        }
+        a{padding: 0;}
+
+    }
+        .next-prev-project .row > div:before{
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+}
+@media (min-width: 0) and (max-width: 769px){
+
+}

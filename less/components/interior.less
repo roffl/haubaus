@@ -27,7 +27,6 @@
     .owl-next{
         right: 30px;
         transform: rotate(180deg);
-        
     }
 }
 // описание проекта
@@ -47,60 +46,59 @@
         font-family: @fira-sans;
         margin-bottom: 30px;
     }
-    .about-project{
-        margin-bottom: 80px;
+}
+
+.about-project{
+    margin-bottom: 80px;
+}
+.description-project {
+    margin-right: 14px;
+    p{
+        font-size: 18px;
+        line-height: 24px;
+        font-family: @fira-sans;
+        color: #ddd;
     }
-    .description-project {
-        margin-right: 14px;
-        p{
-            font-size: 18px;
-            line-height: 24px;
-            font-family: @fira-sans;
+}
+.features-project{
+    // padding-top: 6px;
+    border-left: 1px solid #fff;
+
+    .features{ margin-bottom: 20px; }
+
+    p{
+        font-size: 18px;
+        font-family: @fira-sans;
+        color: #ddd;
+        padding-left: 35px;
+        position: relative;
+
+        &:before{
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 4px;
+            top: 0;
+            font-family: @fontello;
             color: #ddd;
         }
     }
-    .features-project{
-        // padding-top: 6px;
-        border-left: 1px solid #fff;
-        .features{
-            margin-bottom: 20px;
-        }
-        p{
-            font-size: 18px;
-            font-family: @fira-sans;
-            color: #ddd;
-            padding-left: 35px;
-            position: relative;
-
-            &:before{
-                content: "";
-                display: inline-block;
-                position: absolute;
-                left: 4px;
-                top: 0;
-                font-family: @fontello;
-                color: #ddd;
-            }
-        }
-        .icon-size span{vertical-align: super;}
-        .icon-size:before{
-            content: "\e806";
-            font-size: 18px;
-            top: 8px;
-        }
-        .icon-address:before{
-            top: -3px;
-            content: "\e805";
-            font-size: 27px;
-        }
-        .icon-period:before{
-            background-image: url(../../img/icon_interior_period.png);
-            height: 18px;
-            width: 18px;
-        }
+    .icon-size span{vertical-align: super;}
+    .icon-size:before{
+        content: "\e806";
+        font-size: 18px;
+        top: 8px;
     }
-    
-
+    .icon-address:before{
+        top: -3px;
+        content: "\e805";
+        font-size: 27px;
+    }
+    .icon-period:before{
+        background-image: url(../../img/icon_interior_period.png);
+        height: 18px;
+        width: 18px;
+    }
 }
 
 .galery-project{
@@ -159,6 +157,10 @@
         a{
             color: #d3d3d3;
             padding: 0 5px; 
+
+            &:hover{
+                text-decoration: none;
+            }
         }
     }
 }

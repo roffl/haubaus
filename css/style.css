@@ -78,15 +78,6 @@
 .col-lg-16 {
   width: 100%;
 }
-.col-lg-offset-2 {
-  margin-left: 12.5%;
-}
-.col-lg-offset-1 {
-  margin-left: 6.25%;
-}
-.hidden-lg {
-  display: none !important;
-}
 .row {
   font-size: 0;
 }
@@ -456,32 +447,32 @@ iframe {
   font-family: 'Fira Sans', sans-serif;
   margin-bottom: 30px;
 }
-.project .about-project {
+.about-project {
   margin-bottom: 80px;
 }
-.project .description-project {
+.description-project {
   margin-right: 14px;
 }
-.project .description-project p {
+.description-project p {
   font-size: 18px;
   line-height: 24px;
   font-family: 'Fira Sans', sans-serif;
   color: #ddd;
 }
-.project .features-project {
+.features-project {
   border-left: 1px solid #fff;
 }
-.project .features-project .features {
+.features-project .features {
   margin-bottom: 20px;
 }
-.project .features-project p {
+.features-project p {
   font-size: 18px;
   font-family: 'Fira Sans', sans-serif;
   color: #ddd;
   padding-left: 35px;
   position: relative;
 }
-.project .features-project p:before {
+.features-project p:before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -490,20 +481,20 @@ iframe {
   font-family: 'Fontello';
   color: #ddd;
 }
-.project .features-project .icon-size span {
+.features-project .icon-size span {
   vertical-align: super;
 }
-.project .features-project .icon-size:before {
+.features-project .icon-size:before {
   content: "\e806";
   font-size: 18px;
   top: 8px;
 }
-.project .features-project .icon-address:before {
+.features-project .icon-address:before {
   top: -3px;
   content: "\e805";
   font-size: 27px;
 }
-.project .features-project .icon-period:before {
+.features-project .icon-period:before {
   background-image: url(../../img/icon_interior_period.png);
   height: 18px;
   width: 18px;
@@ -557,6 +548,9 @@ iframe {
 .next-prev-project p a {
   color: #d3d3d3;
   padding: 0 5px;
+}
+.next-prev-project p a:hover {
+  text-decoration: none;
 }
 .magazines {
   background-color: #121212;
