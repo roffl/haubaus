@@ -1,1 +1,164 @@
-.interior .row>div{font-size: 15px;}
+// .interior .row>div{font-size: 15px;}
+
+// слайдер
+
+.interior{
+
+    .owl-carousel .item{
+        background-color: #121212;
+        height: 660px;
+        width: auto;
+    }
+    .owl-nav>div{       
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0,0,0, 0.8);
+        color: transparent;
+        background-image: url(../../img/icon_project_slider_arrow.png);
+        background-size: 12px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .owl-prev{left: 30px;}
+    .owl-next{
+        right: 30px;
+        transform: rotate(180deg);
+        
+    }
+}
+// описание проекта
+.project{
+    padding: 30px 0 80px;
+
+    .breadcrumbs{ 
+        margin-bottom: 25px;
+        a{
+            color: #949494;
+            font-size: 16px;
+        }
+    }
+    h1{
+        font-size: 40px;
+        color: #fff;
+        font-family: @fira-sans;
+        margin-bottom: 30px;
+    }
+    .about-project{
+        margin-bottom: 80px;
+    }
+    .description-project {
+        margin-right: 14px;
+        p{
+            font-size: 18px;
+            line-height: 24px;
+            font-family: @fira-sans;
+            color: #ddd;
+        }
+    }
+    .features-project{
+        // padding-top: 6px;
+        border-left: 1px solid #fff;
+        .features{
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            font-family: @fira-sans;
+            color: #ddd;
+            padding-left: 35px;
+            position: relative;
+
+            &:before{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: 4px;
+                top: 0;
+                font-family: @fontello;
+                color: #ddd;
+            }
+        }
+        .icon-size span{vertical-align: super;}
+        .icon-size:before{
+            content: "\e806";
+            font-size: 18px;
+            top: 8px;
+        }
+        .icon-address:before{
+            top: -3px;
+            content: "\e805";
+            font-size: 27px;
+        }
+        .icon-period:before{
+            background-image: url(../../img/icon_interior_period.png);
+            height: 18px;
+            width: 18px;
+        }
+    }
+    
+
+}
+
+.galery-project{
+    &>div:nth-child(3){
+        padding-right: 24px;    
+    }
+
+    .image-wrapper{
+        display: inline-block;
+        width: 100%;
+        height: 240px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+// ссылки на предыдущий и следующий проект
+.next-prev-project{
+    padding: 30px 0 25px;
+
+    .row>div{
+        position: relative;
+            
+            &:before{
+                content: " ";
+                display: inline-block;  
+                background-image: url(../../img/icon_project_next-prev.png);
+                width: 12px;
+                height: 18px;   
+                background-size: 12px 18px; 
+                position: absolute;
+                top: -2px; 
+            }
+            &:first-child:before{
+                left: 24px;    
+            }
+            &:last-child:before{
+                right: 24px;   
+                transform: rotate(180deg);
+                
+            }
+    }
+
+    p{
+        font-size: 16px;
+        color: #4e4d4d;
+        font-family: @fira-sans;
+
+        &:first-child{
+            padding-left: 30px; 
+        }
+        &:last-child{padding-right: 30px;   }
+
+        a{
+            color: #d3d3d3;
+            padding: 0 5px; 
+        }
+    }
+}

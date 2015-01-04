@@ -14,6 +14,18 @@
 .text-white {
   color: #fff;
 }
+.breadcrumbs {
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 35px;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.breadcrumbs a {
+  font-weight: normal;
+  text-decoration: none;
+}
 .container {
   width: 1600px;
   margin: 0 auto;
@@ -68,6 +80,12 @@
 }
 .col-lg-offset-2 {
   margin-left: 12.5%;
+}
+.col-lg-offset-1 {
+  margin-left: 6.25%;
+}
+.hidden-lg {
+  display: none !important;
 }
 .row {
   font-size: 0;
@@ -396,8 +414,149 @@ iframe {
 .upper-footer .social {
   display: none;
 }
-.interior .row > div {
-  font-size: 15px;
+.interior .owl-carousel .item {
+  background-color: #121212;
+  height: 660px;
+  width: auto;
+}
+.interior .owl-nav > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: transparent;
+  background-image: url(../../img/icon_project_slider_arrow.png);
+  background-size: 12px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.interior .owl-prev {
+  left: 30px;
+}
+.interior .owl-next {
+  right: 30px;
+  transform: rotate(180deg);
+}
+.project {
+  padding: 30px 0 80px;
+}
+.project .breadcrumbs {
+  margin-bottom: 25px;
+}
+.project .breadcrumbs a {
+  color: #949494;
+  font-size: 16px;
+}
+.project h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  margin-bottom: 30px;
+}
+.project .about-project {
+  margin-bottom: 80px;
+}
+.project .description-project {
+  margin-right: 14px;
+}
+.project .description-project p {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #ddd;
+}
+.project .features-project {
+  border-left: 1px solid #fff;
+}
+.project .features-project .features {
+  margin-bottom: 20px;
+}
+.project .features-project p {
+  font-size: 18px;
+  font-family: 'Fira Sans', sans-serif;
+  color: #ddd;
+  padding-left: 35px;
+  position: relative;
+}
+.project .features-project p:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 0;
+  font-family: 'Fontello';
+  color: #ddd;
+}
+.project .features-project .icon-size span {
+  vertical-align: super;
+}
+.project .features-project .icon-size:before {
+  content: "\e806";
+  font-size: 18px;
+  top: 8px;
+}
+.project .features-project .icon-address:before {
+  top: -3px;
+  content: "\e805";
+  font-size: 27px;
+}
+.project .features-project .icon-period:before {
+  background-image: url(../../img/icon_interior_period.png);
+  height: 18px;
+  width: 18px;
+}
+.galery-project > div:nth-child(3) {
+  padding-right: 24px;
+}
+.galery-project .image-wrapper {
+  display: inline-block;
+  width: 100%;
+  height: 240px;
+}
+.galery-project .image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.next-prev-project {
+  padding: 30px 0 25px;
+}
+.next-prev-project .row > div {
+  position: relative;
+}
+.next-prev-project .row > div:before {
+  content: " ";
+  display: inline-block;
+  background-image: url(../../img/icon_project_next-prev.png);
+  width: 12px;
+  height: 18px;
+  background-size: 12px 18px;
+  position: absolute;
+  top: -2px;
+}
+.next-prev-project .row > div:first-child:before {
+  left: 24px;
+}
+.next-prev-project .row > div:last-child:before {
+  right: 24px;
+  transform: rotate(180deg);
+}
+.next-prev-project p {
+  font-size: 16px;
+  color: #4e4d4d;
+  font-family: 'Fira Sans', sans-serif;
+}
+.next-prev-project p:first-child {
+  padding-left: 30px;
+}
+.next-prev-project p:last-child {
+  padding-right: 30px;
+}
+.next-prev-project p a {
+  color: #d3d3d3;
+  padding: 0 5px;
 }
 .magazines {
   background-color: #121212;
@@ -506,14 +665,6 @@ iframe {
   font-weight: 500;
   font-family: 'Fira Sans', sans-serif;
   color: #464646;
-}
-.breadcrumbs {
-  font-size: 18px;
-  font-family: 'PT Sans', sans-serif;
-  margin-bottom: 35px;
-}
-.breadcrumbs a {
-  font-weight: normal;
 }
 .blog-post-short {
   font-size: 18px;
@@ -773,4 +924,10 @@ header,
 }
 .upper-footer {
   background-color: #2e2e2e;
+}
+.bg-dark {
+  background-color: #090909;
+}
+.bg-dark-gray {
+  background-color: #121212;
 }
