@@ -18,15 +18,17 @@ $(document).ready(function() {
     // sliderLocation = $('.portfolio-content').find('.slider')
     // dataProjectIndex = $('.portfolio-content').find('.row').attr('data-project');
 
-    // if( $(window).width() < 1200 ){
 
-    //     $('[data-project]').each(function (idx, element) {
-    //         $(element).children('.abstract-project').find('h2').insertBefore('.bx-wrapper');
-    //     });
-        
-    //     // $('[data-project="' + dataProjectIndex + '"]').find('h2').insertBefore('[data-project' + dataProjectIndex + '] .slider')
+    $(window).resize(function () {
 
-    // }
+        if( $(window).width() < 770 ){
+            $('.abstract-project').find('.button').text('Посмотреть проект подробно');
+
+        } else{
+            $('.abstract-project').find('.button').text('Посмотреть проект');
+        }
+
+    });
 
 
 });
