@@ -405,6 +405,126 @@ iframe {
 .upper-footer .social {
   display: none;
 }
+.portfolio-promo {
+  background-image: url(../../img/img_portfolio_promo.jpg);
+  min-height: 648px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.portfolio-promo h1 {
+  font-size: 50px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 25px 15px;
+  width: 672px;
+  position: absolute;
+  top: 307px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.portfolio-promo h5 {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 120px;
+  padding: 15px;
+  top: 250px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.portfolio-promo h5 span {
+  padding: 0 3px;
+}
+.portfolio-content {
+  padding: 80px 0;
+}
+.portfolio-content .row {
+  margin-bottom: 80px;
+}
+.portfolio-content .row:last-child {
+  margin-bottom: 0;
+}
+.portfolio-content .slider {
+  position: relative;
+}
+.portfolio-content .bx-wrapper img {
+  width: 100%;
+}
+.portfolio-content .bx-viewport {
+  border: none;
+  box-shadow: none;
+  left: auto;
+}
+.portfolio-content .bx-controls-direction {
+  height: 55px;
+  width: 110px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.portfolio-content .bx-controls-direction a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 12px;
+  height: 18px;
+  color: transparent;
+  background-image: url(../../img/icon_project_slider_arrow.png);
+  background-size: 12px 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.portfolio-content .bx-prev {
+  left: 14px;
+}
+.portfolio-content .bx-next {
+  right: 14px;
+  transform: rotate(180deg);
+}
+.portfolio-content .num {
+  height: 20px;
+  font-size: 26px;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+}
+.slider-project h2 {
+  display: none;
+}
+.abstract-project {
+  color: #ddd;
+  font-family: 'Fira Sans', sans-serif;
+}
+.abstract-project h2 {
+  font-size: 32px;
+  margin-bottom: 23px;
+}
+.abstract-project p {
+  font-size: 16px;
+  margin-bottom: 23px;
+  line-height: 22px;
+}
+.abstract-project .button {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 15px 15px 10px;
+  border: 1px solid #a4a4a4;
+}
+.abstract-project .button:hover {
+  border: 1px solid #fff;
+}
 .interior .owl-carousel .item {
   background-color: #121212;
   height: 660px;

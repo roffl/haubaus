@@ -1,0 +1,137 @@
+.portfolio-promo{
+    background-image: url(../../img/img_portfolio_promo.jpg);
+    min-height: 648px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    
+
+
+    h1{
+        font-size: 50px;
+        color: #fff;
+        font-family: @pt-sans;
+        background-color: rgba(0,0,0,0.8);
+        padding: 20px 25px 15px;
+        width: 672px;
+        position: absolute;
+        top: 307px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
+    h5{
+        font-size: 16px;
+        color: #fff;
+        font-family: @pt-sans;
+        background-color: rgba(0,0,0,0.8);
+        width: 120px;
+        padding: 15px;
+        top: 250px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        span{padding: 0 3px;}
+    }
+    
+}
+
+.portfolio-content{
+    padding: 80px 0;
+        
+    .row{
+        margin-bottom: 80px;
+
+        &:last-child{margin-bottom: 0;}
+    }
+    .slider{
+        position: relative;
+
+    }
+
+    .bx-wrapper img{width: 100%;}
+    .bx-viewport{
+        border: none;
+        box-shadow: none;
+        left: auto; 
+    }
+    .bx-controls-direction{            
+        height: 55px;
+        width: 110px;
+        border-radius: 30px;
+        background-color: rgba(0,0,0,0.8);
+        position: absolute;
+        bottom: 20px;
+        right: 20px; 
+    }
+
+    .bx-controls-direction a{       
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 12px;
+        height: 18px;
+        color: transparent;
+        background-image: url(../../img/icon_project_slider_arrow.png);
+        background-size: 12px 18px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }    
+    .bx-prev{left: 14px;}
+    .bx-next{
+        right: 14px;
+        transform: rotate(180deg);
+    }
+    //     .owl-stage-outer,.owl-carousel .item{
+    //         height: 420px !important;
+    //     }
+    //     .owl-nav{
+ 
+    //     }
+
+    //     &+a{display: none;}
+    // }
+
+    .num{
+        // width: 10px;
+        height: 20px;   
+        // background-color: #fff; 
+        font-size: 26px;    
+        color: #fff;   
+        font-family: @pt-sans; 
+    }
+
+}
+.slider-project h2{display: none;}
+
+.abstract-project{
+    color: #ddd;
+    font-family: @fira-sans;
+
+
+    h2{
+        font-size: 32px;
+        margin-bottom: 23px;
+    }
+    p{
+        font-size: 16px;
+        margin-bottom: 23px;
+        line-height: 22px;
+    }
+    .button{
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 15px 15px 10px;
+        border: 1px solid #a4a4a4;
+
+        &:hover{
+            border: 1px solid #fff;
+        }
+    }
+}

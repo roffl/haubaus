@@ -1,0 +1,7 @@
+.portfolio-promo {
+  background-image: url(../../img/img_portfolio_promo.jpg);
+  min-height: 648px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

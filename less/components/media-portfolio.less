@@ -1,0 +1,116 @@
+@media (min-width: 1200px) and (max-width: 1599px){
+    .portfolio-promo{
+        min-height: 493px;  
+        h1{
+            font-size: 40px;
+            width: 536px;
+            padding: 15px 19px; 
+            top: 249px; 
+        }
+        h5{
+            top: 190px; 
+        }
+    }
+    .abstract-project{ 
+        h2{
+            font-size: 30px;
+            margin-bottom: 20px;    
+        }
+        p{
+            margin-bottom: 25px;    
+        }
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1199px){
+    .portfolio-content{
+        padding: 80px 0 30px;
+    }
+    .portfolio-promo{
+        min-height: 493px;
+
+        h1{
+            font-size: 36px; 
+            top: 246px; 
+            width: 494px;   
+        }
+        h5{
+            top: 190px; 
+        }
+    }
+    .portfolio-content .row{position: relative;}
+    .portfolio-content .row>div{
+        padding: 0 26px;    
+    }
+    .portfolio-content{
+        .bx-viewport{
+            border: none;
+            box-shadow: none;
+            width: 718px !important;
+        }
+        .bx-controls-direction{            
+            height: auto;
+            width: auto;
+            border-radius: 0;
+            background-color: transparent;
+            position: static;
+            bottom: auto;
+            right: auto; 
+        }
+        .bx-controls-direction a{       
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 50px;
+            height: 50px;
+            color: transparent;
+            background-image: url(../../img/icon_project_slider_arrow.png);
+            background-color: rgba(0,0,0,0.8);
+            background-size: 12px 18px;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }    
+        .bx-prev{left: 14px;}
+        .bx-next{
+            right: 14px;
+            transform: rotate(180deg);
+        }
+    }
+    .portfolio-content .row:last-child .abstract-project p{margin-bottom: 0;}
+    .abstract-project {
+        h2{
+            font-size: 26px;
+            position: absolute;
+            top: -40px;
+        }
+        p{
+            padding-top: 20px;
+        }
+        .button{display: none;}
+    }
+
+
+    .slider-project {
+        position: relative;
+        
+        .button{
+            display: inline-block;
+            font-size: 16px;
+            text-decoration: none;
+            font-family: @fira-sans;
+            color: #303030;
+            background-color: #d0d0d0;
+            border-radius: 8px;
+            padding: 15px;
+            position: absolute;
+            bottom: 23px;
+            right: 49px;
+            box-shadow: 0 3px 0 0 #a2a2a2;
+        }
+    }
+
+}
+@media (min-width: 0) and (max-width: 769px){
+
+}
