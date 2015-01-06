@@ -1,0 +1,233 @@
+
+// Промо блок
+.main-promo{
+    width: 9000px;  
+    // height: 690px;  
+    p{display: none;
+        }
+    .promo-slider{
+        display: none;
+    }
+}
+.pict-group{
+    position: relative;
+    width: 1040px;  
+    height: 100%;
+    float: left;
+    margin-right: 10px; 
+}
+.pict-big{
+    width: 690px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    img{height: 100%;   }
+
+    &:hover .pict-big-overlay{display: block;}
+}
+.pict-big-overlay{
+    .overlay();
+
+    h2 a{
+        display: inline-block;  
+        font-size: 36px; 
+        color: #fff;
+        text-decoration: none;
+        font-family: @fira-sans;
+        margin-bottom: 30px;    
+    }
+    .more-info{font-size: 20px;}
+}
+.pict-small{
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    overflow: hidden;
+    right: 0;   
+
+    img{height: 100%;}
+
+    &:hover .pict-small-overlay{display: block; }
+}
+.pict-small-bottom{
+    bottom: 0;  
+}
+.pict-small-overlay{
+   .overlay();
+
+    h2 a{
+        font-size: 28px;
+        color: #fff;
+        display: inline-block;
+        text-decoration: none; 
+        font-family: @fira-sans;
+        margin-bottom: 20px;    
+    }
+}
+// слайдер с наградами
+.main-slider-awards{
+    border-top: 10px solid #121212;
+    background-color: #1f1f1f;
+}
+.awards-carousel{
+    .awards{
+        font-size: 18px;
+        color: #e8e8e8; 
+        font-family: @fira-sans;
+        cursor: pointer;
+        position: relative;
+        padding: 30px 0 25px; 
+        padding-left: 50px;
+        
+
+        &:before{
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            width: 23px;
+            height: 28px;
+            background-repeat: no-repeat;
+            left: 43px;
+            top: 23px;
+        }
+    }
+    .icon-medal:before{
+        background-image: url(../../img/icon_main_awards_medal.png);
+        background-size: 23px 28px;
+            background-repeat: no-repeat;
+    }
+    .icon-publication:before{
+        background-image: url(../../img/icon_main_awards_publicationl.png);
+        background-size: 21px 26px;
+    }
+
+    .owl-nav > div{
+        position: absolute;
+        background-image: url(../../img/icon_project_slider_arrow.png);
+        background-size: 12px 18px;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .owl-prev{left: 0;}
+    .owl-next{
+        right: 0;
+        transform: rotate(180deg);
+    }
+.owl-item{text-align: center;}
+}
+
+// работа с фоновым цветом
+
+.main + footer{ 
+    .upper-footer{
+        background-color: transparent;
+    }
+    .lower-footer{
+        background-color: #1f1f1f;
+    }
+}
+
+// Блог в футере
+
+.footer-blog{
+    padding-bottom: 40px;   
+    h3{
+        font-size: 32px;
+        font-family: @fira-sans;
+        color: #fff;
+    }
+    .row{
+        margin-bottom: 40px;
+        font-size: 0;
+
+        &:last-child{margin-bottom: 0;}
+
+
+    }
+}
+.blog-entry{
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 28px;
+    margin-right: 4%;
+
+    &:nth-child(2n){
+        margin-right: 0;
+    }
+
+    &:last-child, &:nth-last-child(2){margin-bottom: 0;}
+
+    .image-wrapper{
+        display: inline-block;
+        width: 48%;  
+        margin-right: 4%;   
+
+        
+        img{
+            width: 100%; 
+            border-radius: 8px; 
+            background-color: #121212; 
+        }
+    }
+}
+
+.entry-description{
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    h4{
+        margin-bottom: 15px;    
+        a{
+            font-size: 18px;
+            color: #ededed;
+            font-family: @fira-sans;
+            text-decoration: none;
+        }
+    } 
+    .link{
+        text-decoration: underline; 
+        font-size: 16px;    
+
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.entry-comments{
+    margin-bottom: 15px;    
+    a{
+        font-family: @pt-sans;
+        font-size: 16px;
+        font-style: italic;
+        text-decoration: none;
+        color: #919191;
+    }
+}
+
+// Боковая панель
+
+.footer-blog{
+    .aside-nav{
+        border-left: 1px solid #575757; 
+        padding-left: 30px;    
+        p{
+            color: #b6b6b6; 
+        }
+
+        a{
+            color: #9d9d9d; 
+        }
+        .all-links{
+            color: #434343; 
+        }
+    }
+}
+
+
+

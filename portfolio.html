@@ -5,12 +5,16 @@
         <meta name="viewport" content="width=device-width">
         <title>Haubaus</title>
         <link rel='stylesheet' href='css/reset.css' type='text/css'><link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/media.css" type="text/css">
     </head>
     <body>
+        <!-- Хедер -->
         <header>
             <div class="container">
                 <div class="row">
@@ -39,68 +43,67 @@
                 </div>
             </div>
         </header>
-        <div class="blog">
-            <div class="wrapper">
+        <!-- Основной контент -->
+        <div class="portfolio">
+            <!-- Большая картинка -->
+            <div class="wrapper bg-dark-gray portfolio-promo">
+                <h5>Портфолио <span>&frasl;</span></h5>
+                <h1>Общественные интерьеры</h1>
+            </div>  <!-- /div class="wrapper image-portfolio" -->  
+            <div class="wrapper bg-dark-gray portfolio-content">
+                <!-- Контейнер -->
                 <div class="container">
+                    <!-- Ряд -->
                     <div class="row">
-                        <div class="col-lg-3 hidden-md hidden-sm hidden-xs aside-nav">
-                            <p>Портфолио</p>
-                            <ul>
-                                <li><a href="#">Общественные интерьеры</a></li>
-                                <li><a href="#">Общественные здания</a></li>
-                                <li><a href="#">Частные интерьеры</a></li>
-                                <li><a href="#">Коттеджи</a></li>
+                        <!-- Колока на 8 столбцов сдвинутая на 2 - тут слайдер -->
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-xs-6 slider-project">
+                            <h2>Квартира на проспекте Маршала Жукова</h2>
+                            <ul class="slider slider-project-1" data-index-slider="1">
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
                             </ul>
-                            <p>Публикации</p>
-                            <ul class="list-publications">
-                                <li><a href="#">Общественные интерьеры</a></li>
-                                <li><a href="#">Общественные здания</a></li>
-                                <li><a href="#">Частные интерьеры</a></li>
-                                <li><a href="#">Коттеджи</a></li>
-                                <li><a href="#" class="all-links">Все публикации</a></li>
-                            </ul>
+                            <a href="#" class="button">Посмотреть проект подробно</a>
                         </div>
-                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-6 blog-list">
-                            <ul class="breadcrumbs">
-                                <li><a href="" class="link"><span>Блог /</span></a></li>
-                            </ul>
-                            <div class="blog-post-short">
-                                <p class="post-title">Премиальная разработка длинного заголовка для записи в блоге</p>
-                                <p>Еще до момента заключения договора точка перегиба интегрирует нечетный ортзанд. Спектральная отражательная способность обуславливает гончарный дренаж, когда речь идет об ответственности юридического лица. Политическая модернизация позиционирует анализ зарубежного опыта. Монолит теоретически возможен. Математический анализ транслирует смешанный тетрахорд.</p>
-                                <div class="post-short-img">    
-                                    <a href="#" class="image-wrapper"><img src="img/img_post_short_1.jpg" alt=""></a>
-                                    <a href="#" class="image-wrapper"><img src="img/img_post_short_2.jpg" alt=""></a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="" class="button">Читать полностью</a>
-                                </div>
-                            </div>
-                            <div class="blog-post-short">
-                                <p class="post-title">Премиальная разработка длинного заголовка для записи в блоге</p>
-                                <p>Еще до момента заключения договора точка перегиба интегрирует нечетный ортзанд. Спектральная отражательная способность обуславливает гончарный дренаж, когда речь идет об ответственности юридического лица. Политическая модернизация позиционирует анализ зарубежного опыта. Монолит теоретически возможен. Математический анализ транслирует смешанный тетрахорд.</p>
-                                <div class="post-short-img">    
-                                    <a href="#" class="image-wrapper"><img src="img/img_post_short_1.jpg" alt=""></a>
-                                    <a href="#" class="image-wrapper"><img src="img/img_post_short_2.jpg" alt=""></a>
-                                </div>
-                                <div class="text-right">
-                                    <a href="#" class="button">Читать полностью</a>
-                                </div>
-                            </div>
+                        <!-- Колонка на 4 - Описание проекта -->
+                        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-6 abstract-project">
+                            <h2>Квартира на проспекте Маршала Жукова</h2>
+                            <p>Архитектурное проектирование общественных зданий, дизайн интерьера, проекты коттеджей и домов, общественные интерьеры: ресторанов, гостиниц, магазинов и бутиков. С 1996 мы сформировали свой авторский стиль для дизайна интерьеров, в которых есть все нужное и нет ничего лишнего.</p>
+                            <a href="" class="button">Посмотреть подробнее</a>
                         </div>
-                        <div class="col-lg-4 col-md-4 hidden-sm hidden-xs aside-nav posts">
-                            <p>Лучшие записи</p>
-                            <ul id="better-posts">
-                                <li><a href="" class="image-wrapper"><img src="img/img_posts_thumbnail_1.jpg" alt=""></a><a href="" class="link">Сколько нужно сантехников, чтобы остановить коррупцию</a></li>
-                                <li><a href="" class="image-wrapper"><img src="img/img_posts_thumbnail_2.jpg" alt=""></a><a href="" class="link">Как связаны светофоры и Apple Macintosh</a></li>
-                                <li><a href="" class="image-wrapper"><img src="img/img_posts_thumbnail_3.jpg" alt=""></a><a href="" class="link">Дизайн-проект башни Старка в центре Нью-Йорка</a></li>
-                                <li><a href="" class="image-wrapper"><img src="img/img_posts_thumbnail_4.jpg" alt=""></a><a href="" class="link">Проектирование воздуха</a></li>
-                                <li><a href="" class="all-posts">Все записи</a></li>
+                    </div>
+                    <!-- Ряд -->
+                    <div class="row">
+                        <!-- Колонка на 8, сдвинутая на 2 - Слайдер -->
+                        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-xs-6 slider-project">
+                            <h2>Квартира на проспекте Маршала Жукова</h2>
+                            <ul class="slider slider-project-2" data-index-slider="2">
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_1.jpg" alt=""></li>
+                                <li><img src="img/img_portfolio_slide_2.jpg" alt=""></li>
                             </ul>
+                            <a href="#" class="button">Посмотреть проект подробно</a>
                         </div>
-                    </div> <!-- div class="row" -->  
-                </div> <!-- div class="container" -->  
-            </div>  <!-- div class="wrapper" -->         
-        </div> <!-- div class="main" -->
+                        <!-- Колонка на 4 - Описание проекта -->
+                        <div class="col-lg-4 col-md-4 col-sm-8 col-xs-6 abstract-project">
+                            <h2>Квартира на проспекте Маршала Жукова</h2>
+                            <p>Архитектурное проектирование общественных зданий, дизайн интерьера, проекты коттеджей и домов, общественные интерьеры: ресторанов, гостиниц, магазинов и бутиков. С 1996 мы сформировали свой авторский стиль для дизайна интерьеров, в которых есть все нужное и нет ничего лишнего.</p>
+                            <a href="" class="button">Посмотреть подробнее</a>
+                        </div>
+                    </div>
+                </div> <!-- div class="container" -->
+            </div> <!-- div class="wrapper" -->
+        </div> <!-- /div class="main" -->
+        <!-- Подвал -->
         <footer>
             <div class="upper-footer">
                 <div class="container">
@@ -181,8 +184,66 @@
             </div>
         </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
         <script src="js/header.js"></script>
         <script src="js/footer.js"></script>
-        <script src="js/blog-aside-list.js"></script>
+        <script src="js/blog-aside-post.js"></script>
+        <script>
+
+        $(document).ready(function() {
+            container = $('<div class="num"><span class="currentSlide"></span><span class="allSlides"></span></div>');
+
+            countAllItem1 = $('.slider-project-1').find('li').length;
+
+            countAllItem2 = $('.slider-project-2').find('li').length; 
+
+            function slider1Load(){
+                $('.slider-project-1').parents('.bx-wrapper').find('.bx-controls-direction').append(container);
+            }
+            function slider2Load(){
+                $('.slider-project-2').parents('.bx-wrapper').find('.bx-controls-direction').append(container);
+            }
+
+
+            $('.slider-project-1').bxSlider({
+
+                pager: false,
+
+                onSliderLoad: function (currentIndex1){
+                    $(container).find('.currentSlide').text(currentIndex1+1);
+                    $(container).find('.allSlides').text(countAllItem1);
+                },
+
+                onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+
+                }
+            });
+
+
+
+
+
+
+            $('.slider-project-2').bxSlider({
+
+                pager: false,
+
+                // onSliderLoad: function (currentIndex2){
+                //     slider2Load();
+                //     $(container).find('.currentSlide').text(currentIndex2+1);
+                //     $(container).find('.allSlides').text(countAllItem2);
+                // },
+
+                onSlideAfter: function ($slideElement, oldIndex, newIndex) {
+
+                    // var indexSlider = $($slideElement).parents('.slider').attr('data-index-slider');
+                    // alert(newIndex+1);
+                }
+            });
+
+        });
+        </script>
+        <script src="js/portfolio.js"></script>
     </body>
 </html>
