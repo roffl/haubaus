@@ -145,7 +145,7 @@ a.logo p {
 a.logo p:before {
   content: " ";
   display: inline-block;
-  background-image: url(../../img/icon_line_vertical.png);
+  background-image: url(../img/icon_line_vertical.png);
   width: 1px;
   height: 26px;
   position: absolute;
@@ -189,7 +189,7 @@ nav li a {
 .outer-list > li:last-child a:before {
   content: " ";
   display: inline-block;
-  background-image: url(../../img/icon_line_vertical.png);
+  background-image: url(../img/icon_line_vertical.png);
   width: 1px;
   height: 26px;
   position: absolute;
@@ -249,7 +249,7 @@ iframe {
 .social li:first-child:before {
   content: " ";
   display: inline-block;
-  background-image: url(../../img/icon_line_vertical.png);
+  background-image: url(../img/icon_line_vertical.png);
   width: 1px;
   height: 26px;
   position: absolute;
@@ -286,7 +286,7 @@ iframe {
 }
 .move-up {
   display: none;
-  background-image: url(../../img/icon_footer_button_to_up.png);
+  background-image: url(../img/icon_footer_button_to_up.png);
   width: 25px;
   height: 15px;
   background-size: 25px 15px;
@@ -323,7 +323,7 @@ iframe {
 .upper-footer-logo span:before {
   content: " ";
   display: inline-block;
-  background-image: url(../../img/icon_line_vertical.png);
+  background-image: url(../img/icon_line_vertical.png);
   width: 1px;
   height: 26px;
   position: absolute;
@@ -421,13 +421,20 @@ iframe {
   border: 1px solid transparent;
 }
 .main-promo {
-  width: 9000px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
 }
 .main-promo p {
   display: none;
 }
 .main-promo .promo-slider {
   display: none;
+}
+.slider-big {
+  width: 9000px;
+  height: 600px;
 }
 .pict-group {
   position: relative;
@@ -446,20 +453,36 @@ iframe {
   height: 100%;
 }
 .pict-big:hover .pict-big-overlay {
-  display: block;
+  opacity: 1;
+}
+.pict-big:hover .pict-big-overlay h2 {
+  left: 0;
+  opacity: 1;
+}
+.pict-big:hover .pict-big-overlay .more-info {
+  top: 0;
+  opacity: 1;
 }
 .pict-big-overlay {
-  display: none;
+  display: block;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: 800ms all;
+  opacity: 0;
+}
+.pict-big-overlay h2 {
+  position: relative;
+  left: 500px;
+  opacity: 0;
+  transition: 800ms all;
 }
 .pict-big-overlay h2 a {
   display: inline-block;
-  font-size: 36px;
+  font-size: 2em;
   color: #fff;
   text-decoration: none;
   font-family: 'Fira Sans', sans-serif;
@@ -467,6 +490,10 @@ iframe {
 }
 .pict-big-overlay .more-info {
   font-size: 20px;
+  position: relative;
+  transition: 800ms all;
+  top: 150px;
+  opacity: 0;
 }
 .pict-small {
   width: 340px;
@@ -479,19 +506,21 @@ iframe {
   height: 100%;
 }
 .pict-small:hover .pict-small-overlay {
-  display: block;
+  opacity: 1;
 }
 .pict-small-bottom {
   bottom: 0;
 }
 .pict-small-overlay {
-  display: none;
+  display: block;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.8);
+  transition: 800ms all;
+  opacity: 0;
 }
 .pict-small-overlay h2 a {
   font-size: 28px;
@@ -525,17 +554,17 @@ iframe {
   top: 23px;
 }
 .awards-carousel .icon-medal:before {
-  background-image: url(../../img/icon_main_awards_medal.png);
+  background-image: url(../img/icon_main_awards_medal.png);
   background-size: 23px 28px;
   background-repeat: no-repeat;
 }
 .awards-carousel .icon-publication:before {
-  background-image: url(../../img/icon_main_awards_publicationl.png);
+  background-image: url(../img/icon_main_awards_publicationl.png);
   background-size: 21px 26px;
 }
 .awards-carousel .owl-nav > div {
   position: absolute;
-  background-image: url(../../img/icon_project_slider_arrow.png);
+  background-image: url(../img/icon_project_slider_arrow.png);
   background-size: 12px 18px;
   background-repeat: no-repeat;
   width: 12px;
@@ -643,7 +672,7 @@ iframe {
   color: #434343;
 }
 .portfolio-promo {
-  background-image: url(../../img/img_portfolio_promo.jpg);
+  background-image: url(../img/img_portfolio_promo.jpg);
   min-height: 648px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -717,7 +746,7 @@ iframe {
   width: 12px;
   height: 18px;
   color: transparent;
-  background-image: url(../../img/icon_project_slider_arrow.png);
+  background-image: url(../img/icon_project_slider_arrow.png);
   background-size: 12px 18px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -765,7 +794,20 @@ iframe {
 .interior .owl-carousel .item {
   background-color: #121212;
   height: 660px;
-  width: auto;
+  width: 756px;
+}
+.interior .owl-carousel .item:hover .overlay {
+  opacity: 0;
+}
+.interior .owl-carousel .item .overlay {
+  background-color: #121212;
+  position: absolute;
+  height: 661px;
+  width: 758px;
+  top: 0;
+  left: -1px;
+  opacity: 0.8;
+  transition: 800ms all;
 }
 .interior .owl-nav > div {
   position: absolute;
@@ -776,7 +818,7 @@ iframe {
   height: 50px;
   background-color: rgba(0, 0, 0, 0.8);
   color: transparent;
-  background-image: url(../../img/icon_project_slider_arrow.png);
+  background-image: url(../img/icon_project_slider_arrow.png);
   background-size: 12px 18px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -789,7 +831,7 @@ iframe {
   transform: rotate(180deg);
 }
 .project {
-  padding: 30px 0 80px;
+  padding: 30px 0 1px;
 }
 .project .breadcrumbs {
   margin-bottom: 25px;
@@ -852,7 +894,7 @@ iframe {
   font-size: 27px;
 }
 .features-project .icon-period:before {
-  background-image: url(../../img/icon_interior_period.png);
+  background-image: url(../img/icon_interior_period.png);
   height: 18px;
   width: 18px;
 }
@@ -881,7 +923,7 @@ iframe {
   left: 0;
 }
 .loupe {
-  background: rgba(0, 0, 0, 0.5) url(../../img/icon_project_gallery_loupe.png);
+  background: rgba(0, 0, 0, 0.5) url(../img/icon_project_gallery_loupe.png);
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: 22px;
@@ -899,7 +941,7 @@ iframe {
 .next-prev-project .row > div:before {
   content: " ";
   display: inline-block;
-  background-image: url(../../img/icon_project_next-prev.png);
+  background-image: url(../img/icon_project_next-prev.png);
   width: 12px;
   height: 18px;
   background-size: 12px 18px;
@@ -1173,7 +1215,7 @@ iframe {
   content: "";
   display: inline-block;
   position: absolute;
-  background-image: url(../../img/icon_contacts_line_horizontal.png);
+  background-image: url(../img/icon_contacts_line_horizontal.png);
   width: 169px;
   height: 2px;
   background-size: 168px 2px;

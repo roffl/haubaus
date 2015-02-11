@@ -2,11 +2,22 @@
     .interior .slider{
 
         .owl-stage-outer,.owl-carousel .item{
-            height: 540px !important;
+            height: 515px !important;
         }
+
+        .owl-carousel .item{
+            width: 560px!important;   
+
+            .overlay{
+                height: 516px;
+                width: 561px;   
+            }
+        }
+
         .owl-prev{left: 26px;}
         .owl-next{right: 26px;}
     }
+
     .project{
         h1{font-size: 32px;}
 
@@ -16,12 +27,14 @@
         }
         .features-project{
             width: 32.1%;
-            p{font-size: 16px;}
+
+            p{ font-size: 16px; }
         }
     }
 }
 
 @media (min-width: 770px) and (max-width: 1199px){
+
     .project{
         padding: 25px 0 40px;
     }
@@ -29,9 +42,22 @@
     .interior .slider{
         .owl-stage-outer, .owl-carousel .item{
             height: 480px !important;
-        }
-        .owl-carousel .item img{
             width: auto;
+        }
+
+        .owl-carousel .item{
+            width: auto;   
+
+            .overlay{
+                height: 100%;
+                width: 100%;  
+                opacity: 0;  
+            } 
+        }
+
+
+        .owl-carousel .item img{
+            width: 100%;
             height: 100%;
         }
     }
@@ -118,10 +144,20 @@
     .interior .slider{
 
         .owl-stage-outer, .owl-carousel .item{
-            height: 480px !important;
+            height: 360px !important;
+            width: auto;
+        }
+
+        .owl-carousel .item{
+
+            .overlay{
+                height: 100%;
+                width: 100%; 
+                opacity: 0;   
+            } 
         }
         .owl-carousel .item img{
-            width: auto;
+            width: 100%;
             height: 100%;
         }
         .owl-prev{left: 0;}
@@ -131,7 +167,7 @@
     .project{
         padding-bottom: 0;
         
-        .breadcrumbs{display: none;}
+        // .breadcrumbs{display: none;}
         h1{display: none;}
         .description-project{
             line-height: 22px;

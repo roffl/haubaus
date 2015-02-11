@@ -1,13 +1,32 @@
 // .interior .row>div{font-size: 15px;}
 
-// слайдер
+
 
 .interior{
+    
+    // слайдер
 
+    
     .owl-carousel .item{
         background-color: #121212;
         height: 660px;
-        width: auto;
+        width: 756px;
+        
+        &:hover{
+            .overlay{opacity: 0;}
+        }
+
+        .overlay{
+            // display: block;
+            background-color: #121212;
+            position: absolute;
+            height: 661px;
+            width: 758px;
+            top: 0;
+            left: -1px;
+            opacity: 0.8;
+            transition: 800ms all;
+        }
     }
     .owl-nav>div{       
         position: absolute;
@@ -28,10 +47,11 @@
         right: 30px;
         transform: rotate(180deg);
     }
+
 }
 // описание проекта
 .project{
-    padding: 30px 0 80px;
+    padding: 30px 0 1px;
 
     .breadcrumbs{ 
         margin-bottom: 25px;
