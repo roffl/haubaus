@@ -41,6 +41,9 @@ $(document).ready(function(){
                 'height': heightPictSmall,
                 'width': heightPictSmall
             });
+            $('.pict-group .pict-small:last-child, .pict-group .pict-small:last-child .pict-small-overlay').css({
+                'bottom': heightPictSmall
+            });
             // Присваиваем большому блоку со своим оверлеем его ширину и высоту.
             // Т.к. этот блок растянулся на всю высоту промоблока, то его высота равна высоте промоблока
             $('.pict-big, .pict-big-overlay').css({
@@ -50,12 +53,13 @@ $(document).ready(function(){
             // присваиваем контейнеру для одного большого и двух маленьких блоков свою ширину с учетом маргина
             $('.pict-group').css({
                 // 'height': heightPictSmall,
-                'width': heightPromo + heightPictSmall+10
+                'width': heightPromo + heightPictSmall+10,
+                'height': heightPromo + heightPictSmall+10
             });
             // добавляем паддинг первому элементу
-            $('.pict-group:first .pict-big-overlay').css({
-                'padding-left': (difference/2) + 30
-            });
+            // $('.pict-group:first .pict-big-overlay').css({
+            //     'padding-left': (difference/2) + 30
+            // });
 
         } else if ( $(window).width() > 770 && $(window).width() < 1199){
 
@@ -74,7 +78,8 @@ $(document).ready(function(){
             // присваиваем контейнеру для одного большого и двух маленьких блоков свою ширину с учетом маргина
             $('.pict-group').css({
                 // 'height': heightPictSmall,
-                'width': tabletHeightPictBig
+                'width': tabletHeightPictBig,
+                'height': tabletHeightPictBig + tabletHeightPictSmall + 10
             });
             // добавляем паддинг первому элементу
             $('.pict-group:first .pict-big-overlay').css({

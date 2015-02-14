@@ -26,19 +26,27 @@
     height: 100%;
     position: absolute;
     overflow: hidden;
+    
+    .pict-wrapper{
+        display: block;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
 
-    img{height: 100%;   }
+    img{height: 100%;}
 
     &:hover .pict-big-overlay{
         opacity: 1;
-        
 
         h2{
-            left: 0;
+            left: 30px;
             opacity: 1;
+            bottom: 75px;
         }
         .more-info{
-            top: 0;
+            bottom: 30px;
             opacity: 1;
         }
     }
@@ -46,8 +54,9 @@
 .pict-big-overlay{
     .overlay();
     h2{
-        position: relative;
+        position: absolute;
         left: 500px;
+        bottom: 100px;
         opacity: 0;
         transition: 800ms all;
     }
@@ -62,9 +71,9 @@
     }
     .more-info{
         font-size: 20px;
-        position: relative;
+        position: absolute;
         transition: 800ms all;
-        top: 150px;
+        bottom: 0;
         opacity: 0;
     }
 }
